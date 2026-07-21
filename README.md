@@ -166,11 +166,3 @@ For a production Shopify app, you would use:
 | Data | Hardcoded rules | Database (PostgreSQL) |
 
 See [docs/architecture.md](docs/architecture.md) for the full production architecture comparison.
-
-## ⏱️ Build Time
-
-This project was built in approximately **1 hour**, including:
-- Backend API development and testing (~15 min)
-- Storefront UI with animations and responsive design (~20 min)
-- Deployment and Shopify store configuration (~15 min)
-- Testing and documentation (~10 min)
