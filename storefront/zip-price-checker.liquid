@@ -427,9 +427,16 @@
       // Toggle color scheme for default vs specific pricing
       resultInner.classList.toggle("zip-pricer__result-inner--default", !data.found);
 
+      // Update the Dawn theme's main price display
+      const mainPriceEl = document.querySelector(".price .price-item--regular");
+      if (mainPriceEl) {
+        mainPriceEl.textContent = data.formattedPrice;
+      }
+
       // Animate in
       resultEl.classList.add("zip-pricer__result--visible");
     }
+
 
     async function checkPrice() {
       const zip = input.value.trim();

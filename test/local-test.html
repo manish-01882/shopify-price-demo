@@ -278,8 +278,16 @@
             regionEl.textContent = data.region;
             zipLabel.textContent = "ZIP: " + data.zip + (data.found ? "" : " (standard pricing)");
             resultInner.classList.toggle("zip-pricer__result-inner--default", !data.found);
+
+            // Update local simulated product price
+            const mainPriceEl = document.querySelector(".product-price");
+            if (mainPriceEl) {
+              mainPriceEl.textContent = data.formattedPrice;
+            }
+
             resultEl.classList.add("zip-pricer__result--visible");
           }
+
 
           async function checkPrice() {
             const zip = input.value.trim();
