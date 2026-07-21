@@ -157,12 +157,12 @@ Health check endpoint.
 
 For a production Shopify app, you would use:
 
-| Component | Demo | Production |
-|-----------|------|------------|
-| Frontend | Custom Liquid (pasted) | Theme App Extension (via Shopify CLI) |
-| Backend | Express on Railway | Remix app on Vercel (Shopify-managed) |
-| Communication | Direct API call (CORS) | App Proxy (HMAC-signed) |
-| Auth | None | Shopify OAuth |
-| Data | Hardcoded rules | Database (PostgreSQL) |
+| Component | Demo |
+|-----------|------|
+| Frontend | Custom Liquid (pasted) | 
+| Backend | Express on Railway | 
+| Communication | Direct API call (CORS) |
+| Auth | None | 
+| Data | Hardcoded rules |
 
 See [docs/architecture.md](docs/architecture.md) for the full production architecture comparison.
